@@ -8,8 +8,9 @@
 #define N 5
 int main(){
 	int x[N],temp,i,j;
-	scanf ("%d %d %d %d %d",&x[0],&x[1],&x[2],&x[3],&x[4]);
-	for (i=0;i<4;i++){
+	for (i=0;i<N;i++)
+	scanf ("%d",&x[i]);
+	for (i=0;i<N;i++){
         for (j=0;j<N-1-i;j++){
         	if (x[j]>x[j+1]){
         	  temp=x[j];
